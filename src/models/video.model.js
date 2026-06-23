@@ -40,6 +40,6 @@ const videoSchema = new Schema(
     }
     , { timestamps: true })
 
-videoSchema.plugin
+videoSchema.plugin( mongooesAggregatePaginate )
 
 export const Video = mongooes.model("Video", videoSchema)
